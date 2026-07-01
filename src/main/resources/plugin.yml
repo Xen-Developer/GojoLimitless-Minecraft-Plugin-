@@ -1,0 +1,26 @@
+name: GojoLimitless
+version: '1.0.0'
+main: com.xen.gojolimitless.GojoLimitlessPlugin
+api-version: '1.21'
+author: Xen
+description: Jujutsu Shenanigans-style skill plugin featuring Gojo's Limitless kit, kill-charged Awaken bar, and real particle-based VFX skills.
+
+commands:
+  gojo:
+    description: GojoLimitless admin & player command
+    usage: |
+      /gojo give <player>        - give the Gojo skill kit
+      /gojo awaken <player>      - force-trigger Awaken Mode
+      /gojo bar <player> <0-100> - set a player's awaken bar value
+      /gojo reset <player>       - clear cooldowns, bar, and awaken state
+      /gojo reload               - reload config.yml
+    permission: gojolimitless.command
+    permission-message: You don't have permission to use GojoLimitless commands.
+
+permissions:
+  gojolimitless.command:
+    description: Allows use of /gojo
+    default: op
+  gojolimitless.use:
+    description: Allows using Gojo skills (granted to everyone by default)
+    default: true

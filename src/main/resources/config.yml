@@ -1,0 +1,95 @@
+
+awaken:
+  duration-seconds: 60
+  max-bar: 100.0
+  bar-gain-per-player-damage: 2.2
+  bar-gain-on-player-kill: 15.0
+  bar-gain-on-mob-kill: 4.0
+  bar-gain-on-passive-kill: 1.0
+  decay-enabled: true
+  decay-per-second: 0.15
+
+  decay-grace-seconds: 12
+
+  heal-percent-on-awaken: 25.0
+
+cooldowns:
+
+  global-skill-cooldown-seconds: 1.6
+
+  lapse-blue: 13
+  reversal-red: 9
+  rapid-punches: 11
+  twofold-kick: 10
+  limitless-teleport: 7
+
+  lapse-blue-max: 6
+  reversal-red-max: 7
+  hollow-purple: 18
+  infinite-void: 35
+  hollow-purple-nuke: 999
+
+ranges:
+  lapse-blue-min-distance: 6.0
+  lapse-blue-max-distance: 35.0
+  reversal-red-travel: 40.0
+  reversal-red-blast-radius: 6.0
+  limitless-teleport-range: 30.0
+  domain-radius: 14.0
+  hollow-purple-charge-radius: 5.0
+
+damage:
+  lapse-blue-pull: 5.0
+  lapse-blue-kick: 7.5
+  reversal-red-hit: 12.5
+  reversal-red-blocked: 6.25
+  rapid-punches-per-hit: 2.5
+  rapid-punches-hit-count: 5
+  twofold-kick-hit1: 4.0
+  twofold-kick-hit2: 6.0
+  lapse-blue-max-pull: 8.0
+  lapse-blue-max-kick: 12.0
+  reversal-red-max-hit: 20.0
+  hollow-purple-hit: 28.0
+  infinite-void-tick-damage: 3.0
+  hollow-purple-nuke: 9999.0
+
+domain:
+
+  wall-material: PURPUR_BLOCK
+  floor-material: AMETHYST_BLOCK
+  duration-seconds: 7
+  protect-bedrock: true
+
+mobs:
+
+  hostile:
+    - ZOMBIE
+    - SKELETON
+    - CREEPER
+    - SPIDER
+    - ENDERMAN
+    - WITCH
+    - PILLAGER
+    - VINDICATOR
+    - DROWNED
+    - HUSK
+    - STRAY
+    - PHANTOM
+    - BLAZE
+    - WITHER_SKELETON
+    - PIGLIN_BRUTE
+    - RAVAGER
+    - WARDEN
+    - HOGLIN
+    - ZOGLIN
+
+messages:
+  prefix: "&8[&bGojo&8] "
+  awaken-ready: "&b&lPress Q To Awaken"
+  awaken-activated: "&b&lSix Eyes Open. \"Let's get... a little crazy.\""
+  awaken-ended: "&7Awaken Mode has ended."
+  on-cooldown: "&cThat skill is on cooldown: &f{time}s"
+  global-cooldown: "&7You're still recovering from your last skill: &f{time}s"
+  no-target: "&cNo valid target in range."
+  not-skill-item: "&cThat's not a usable skill right now."
